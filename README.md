@@ -10,10 +10,10 @@
 
 # 🌿Sections
 
-- 🌸 [Presentations]()
-- 🌸 [Key-Maps]()
+- 🌸 [Presentations](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#presentation)
+- 🌸 [Key-Maps](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#keys-map)
 - 🌸 [Galery]()
-- 🌸 [Informations]()
+- 🌸 [Informations](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#contact-me)
 
 # 🌿Presentation
 
@@ -21,7 +21,7 @@
 
 <p align="center">
   <picture>
-    <img src="/img/tras.png">
+    <img src="/img/color.png">
   </picture>
 </p>
 
