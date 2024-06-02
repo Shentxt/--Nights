@@ -1,0 +1,41 @@
+.modal2 {
+    display: block; 
+    position: fixed; 
+    z-index: 2; 
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+}
+
+#time-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  font-size: 2em;
+}
+
+.rabbit{
+  display: flex;
+  height: 7em; 
+  width: 7em; 
+  background: transparent;
+  border-radius: 6px;
+  border-right: 2px solid var(--magenta);  
+  border-left: 2px none var(--magenta); 
+  border-top: 2px none var(--magenta); 
+  border-bottom: 2px none var(--magenta);
+  transition: transform 0.1s ease-in-out;
+}
+
+.rabbit:hover {
+  background: var(--backcolor);
+}
+
+.rabbit:active {
+  transform: scale(0.9);
+}
+
