@@ -10,7 +10,7 @@
     width: 100%; 
     object-fit: cover; 
     margin-right: 2px;
-    width: 42%;
+    width: 52%;
     border: 1px none var(--magenta);   
     border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -22,14 +22,15 @@
   text-shadow: 2px 2px 4px var(--lavanda);
 }
 
-.home {
-  position: fixed;
+.home { 
+  display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  top: 50%;
-  left: 12%;
+  top: 3em;
+  left: -11.60em;
   font-size: 3em;
   transform: translate(-50%, -50%);
   background-color: var(--backcolor);
@@ -106,4 +107,13 @@
 #icon{
    font-size: 75px;
    padding: 10px;
+}
+
+.text {
+  position: fixed;
+  left: 6em;
+  top: 12em;
+  align-items: center;
+  font-size: 25px;
+  color: var(--primary-color);
 }

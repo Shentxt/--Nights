@@ -10,6 +10,7 @@
      --navbar-shallow-color: #d1cfe5;
      --backblur: blur(3px);
      --backcolor: rgba(8, 13, 16, 0.50);
+     --back: rgba(46, 52, 64, 0.50);
 }
 
 .modal {

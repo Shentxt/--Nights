@@ -22,19 +22,25 @@
   <link rel="stylesheet" href="css/img-modal.css" />
   <link rel="stylesheet" href="css/bot-modal.css" />
   <link rel="stylesheet" href="css/search-modal.css" />
+  <link rel="stylesheet" href="css/workspace.css" />
   <script defer src="js/img.js"></script>
   <script defer src="js/time.js"></script>
   <script defer src="js/search.js"></script>
+  <script defer src="js/workspace.js"></script>
+  <script defer src="js/extension.js"></script>
 </head>
 
 <body> 
 <div id="miModal" class="modal">
       <div class="modal-content" >
 
-<div id="search">
+    <div id="search">
+    <div class="text2">
+    <p>Search using g! d! b! y!</p>
     <div class="url">
     <i id="icon" class="fa-brands fa-sistrix"></i>
-    <input type="text" id="searchInput" placeholder="search using g! d! b! y!" onkeydown="if (event.key === 'Enter') search()">
+    <input type="text" id="searchInput" placeholder="Search..." onkeydown="if (event.key === 'Enter') search()">
+</div>
 </div>
 </div>
 
@@ -44,10 +50,13 @@
 
 <div id="modal" class="img-modal">
     <div class="img-content">
-        <div class="url">
+	    <div class="text">
+	<p>Use a URL to Predefine the Image (All Formats are Valid)</p>
+	<div class="url">
         <i id="icon" class="fa-brands fa-sistrix"></i>
-    <input type="text" id="img-url" placeholder="url of the image..." onkeydown="if (event.key === 'Enter') updateImage()">
+    <input type="text" id="img-url" placeholder="URL..." onkeydown="if (event.key === 'Enter') updateImage()">
         </div>
+	    </div>
     </div>
 </div>
 
@@ -58,25 +67,46 @@
 	    O<br>
 	    M<br>
 	    E<br></h1>
+
+<div id="contenedores">
+    </div>
+
+<div id="formContainer" style="display: none;">
+    <form id="linkForm">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="enlace">Enlace:</label><br>
+        <input type="text" id="enlace" name="enlace"><br>
+        <input type="submit" value="Guardar">
+    </form>
 </div>
 
-      </div>
-  </div>
+     </div>
+   </div>
+</div>
+
 
     <div class="plano"></div>
     <div id="miModal" class="modal2">
     <div class="modal-content" >
-    <a href="https://www.bing.com/chat?q=Microsoft+Copilot&FORM=hpcodx">
+    <a href="https://chatgpt.com/">
     <button class="rabbit">
     <img class="icon" src="img/icon.png" alt="icono">
 </button>
-    </a>
-    <div id="time-container">
+    </a> 
+
+    <button onclick="cambiarWorkspace('workspace1')" class="space">一</button>
+    <button onclick="cambiarWorkspace('workspace2')" class="space">二</button>
+    <button onclick="cambiarWorkspace('workspace3')" class="space">三</button>
+    <button onclick="cambiarWorkspace('workspace4')" class="space">四</button>
+
+      <div id="time-container">
      <p class="icon"><i class="fa-solid fa-stopwatch"></i></p>
     <p id="time-display"></p>
     </div>
+    <button onclick="redirectToExtensionPage()" class="extension"><i class="fa-solid fa-box"></i></button>
     </div>     
-</div>
+    </div>
 </body>
 
 </html>

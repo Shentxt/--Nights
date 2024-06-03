@@ -10,10 +10,10 @@
     backdrop-filter: var(--backblur);
     width: 100%; 
     height: 100%;   
-    overflow: auto; 
+    overflow: auto;
 }
 
- #searchInput { 
+#searchInput { 
   width: 100%; 
   height: 100%;
   font-size: 2em;
@@ -36,4 +36,13 @@
   border-left: 2px solid var(--magenta); 
   border-top: transparent; 
   border-bottom: 2px solid var(--magenta);  
+}
+
+.text2 {
+  position: fixed;
+  left: 14em;
+  top: 12em;
+  align-items: center;
+  font-size: 25px;
+  color: var(--primary-color);
 }

@@ -17,7 +17,7 @@
 
 # 🌿Presentation
 
-<h3> Noche is a customizable home page that allows you to immerse yourself in a universe of possibilities. With its intuitive design, you can customize images to your liking and transform your home page into a reflection of your unique style. Additionally, Noche features a floating search bar that you can activate with hotkeys, allowing you to search for information quickly and efficiently. </h3>
+<h3> Nights is a customizable home page that allows you to immerse yourself in a universe of possibilities. With its intuitive design, you can customize images to your liking and transform your home page into a reflection of your unique style. Additionally, Noche features a floating search bar that you can activate with hotkeys, allowing you to search for information quickly and efficiently. </h3>
 
 <p align="center">
   <picture>
@@ -31,12 +31,25 @@
 
 |     Info     |    Keys   |
 | :----------: | :----------: |
-|  Search   |  Ctrl + S |
+|  Open Search |  Ctrl + S |
 |  Edit Img |  Ctrl + A |
+
+# 🌿Key-Search
+
+|     Info     |    Key   |
+| :----------: | :----------: |
+|  Use Google |  g! |
+|  Usa DuckDuckgo |  d! |
+|  Usa Bing |  b! |
+|  Usa Yahoo |  y! |
 
 # ━────────────━────────────━━────────────━━────────────━━────────────
 
 # 🌿Contact Me
 
-- 🌸  [Github](https://github.com/Shentxt)
 - 🌸 [Linkelind](https://www.linkedin.com/in/federico-p-065a42217/)
+
+# 🌿Based
+
+- 🌸 [Tartarus](https://github.com/AllJavi/tartarus-startpage)
+- 🌸 [Dawn](https://github.com/b-coimbra/dawn)
