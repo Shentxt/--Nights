@@ -1,0 +1,83 @@
+/**
+ * Tokens
+ **/
+
+:root {
+  --background: #09090b;
+
+  /* colors are set in JS based on variant */
+  --primary: var(--background);
+  --secondary: var(--background);
+  --shade-color: var(--background);
+
+  --text: hsl(from var(--primary) h s 90%);
+  --text-gentle: hsla(from var(--primary) h s 80% / 70%);
+}
+
+:root {
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --focus-ring: 0.125rem solid var(--secondary);
+}
+
+/**
+ * Typography
+ **/
+
+:root {
+  font-family: Quicksand, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color: var(--text);
+  background: var(--background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Elements
+ **/
+
+button {
+  height: 2.5rem;
+  min-width: 2.5rem;
+  border: 0.125rem solid transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--background);
+    background: var(--primary);
+  }
+  &:focus-visible {
+    border-color: var(--secondary);
+  }
+}
+
+input {
+  height: 2.5rem;
+  width: 100%;
+  min-width: 2.5rem;
+  border: 0.125rem solid var(--primary);
+  padding: 0 0.5rem;
+
+  background: transparent;
+  border-radius: var(--radius-sm);
+
+  &::placeholder {
+    color: var(--text-gentle);
+  }
+  &:focus-visible {
+    border-color: var(--secondary);
+  }
+}

@@ -1,55 +1,52 @@
 <div align="center">
-     <h1> 🌸 夜 ~ Nights 🌸</h1>
+     <h1> 🌸 「契」Night 🌸</h1>
  </div>
 
 <p align="center">
   <picture>
-    <img src="/img/tras.png">
+    <img src="./src/public/images/tras.png">
   </picture>
 </p>
 
-# 🌿Sections
+# 🌿 Sections
 
-- 🌸 [Presentations](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#presentation)
-- 🌸 [Key-Maps](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#keys-map)
+- 🌸 [Presentation](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#presentation)
+- 🌸 [Key](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#keys-search)
 - 🌸 [Galery]()
 - 🌸 [Informations](https://github.com/Shentxt/--Nights/tree/main?tab=readme-ov-file#contact-me)
 
-# 🌿Presentation
+# 🌿 Presentation
 
-<h3> Nights is a customizable home page that allows you to immerse yourself in a universe of possibilities. With its intuitive design, you can customize images to your liking and transform your home page into a reflection of your unique style. Additionally, Noche features a floating search bar that you can activate with hotkeys, allowing you to search for information quickly and efficiently. </h3>
+<h3> Nights is a homepage that adapts to your chosen image, offering a clean yet elegant style with smooth transitions. </h3>
 
 <p align="center">
   <picture>
-    <img src="/img/color.png">
+    <img src="./src/public/images/preview.png">
   </picture>
 </p>
 
 # ━────────────━────────────━━────────────━━────────────━━────────────
 
-# 🌿Keys-Map
+# 🌿 Key-Search
 
-|     Info     |    Keys   |
-| :----------: | :----------: |
-|  Open Search |  Ctrl + S |
-|  Edit Img |  Ctrl + A |
+> :information_source: **Don’t use the special characters below if you want a regular search.**
 
-# 🌿Key-Search
-
-|     Info     |    Key   |
-| :----------: | :----------: |
-|  Use Google |  g! |
-|  Usa DuckDuckgo |  d! |
-|  Usa Bing |  b! |
-|  Usa Yahoo |  y! |
+|     Search on  |    Key       |
+|  :----------:  | :----------: |
+|  Use Pinterest |  p! |
+|  Use Youtube   |  Y! |
+|  Use Reddit    |  R! |
+|  Use Gpt       |  G! |
 
 # ━────────────━────────────━━────────────━━────────────━━────────────
 
-# 🌿Contact Me
+# 🌿 Contact Me
 
 - 🌸 [Linkelind](https://www.linkedin.com/in/federico-p-065a42217/)
 
-# 🌿Based
+# 🌿 Based
 
-- 🌸 [Tartarus](https://github.com/AllJavi/tartarus-startpage)
-- 🌸 [Dawn](https://github.com/b-coimbra/dawn)
+- 🌸 [PrettyCoffe](https://github.com/PrettyCoffee/dandadan-startpage) 
+- 🌸 [Alljavi](https://github.com/AllJavi/tartarus-startpage)
+- 🌸 [B-Coimbra](https://github.com/b-coimbra/dawn)
+- 🌸 [AmeerMoustafa](https://github.com/AmeerMoustafa/Forbidden-startpage)

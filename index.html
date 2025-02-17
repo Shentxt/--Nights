@@ -1,112 +1,119 @@
-<!DOCTYPE html>
-
-<!-- Main -->
-<html lang="es"> 
+<!doctype html>
+<html lang="en">
 
 <head>
+  <title>Night</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 100 100'%3E
+%3Ccircle cx='50' cy='50' r='45' fill='none' stroke='%230066cc' stroke-width='5'/%3E
+%3Ccircle cx='50' cy='50' r='30' fill='none' stroke='%230066cc' stroke-width='5'/%3E
+%3Ctext x='50' y='20' font-size='12' fill='%23fff' text-anchor='middle'%3EXII%3C/text%3E
+%3Ctext x='80' y='55' font-size='12' fill='%23fff' text-anchor='middle'%3EIII%3C/text%3E
+%3Ctext x='50' y='90' font-size='12' fill='%23fff' text-anchor='middle'%3EVI%3C/text%3E
+%3Ctext x='20' y='55' font-size='12' fill='%23fff' text-anchor='middle'%3EIX%3C/text%3E
+%3Cline x1='50' y1='50' x2='50' y2='30' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E
+%3Cline x1='50' y1='50' x2='65' y2='50' stroke='%23fff' stroke-width='2' stroke-linecap='round'/%3E
+%3Ccircle cx='50' cy='50' r='3' fill='%23fff'/%3E
+%3C/svg%3E" type="image/svg+xml">
+
+
+  <meta name="author" content="Shen">
+
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>夜 ~ Nights</title>
+  
+  <meta property="og:locale" content="en_US">
 
-  <!-- Links -->
-  <link rel="icon" href="img/tras.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
-  <script src="https://kit.fontawesome.com/50ca4bca32.js" crossorigin="anonymous"></script>
-
-  <!-- Directory -->
-  <link rel="stylesheet" href="css/background.css" />
-  <link rel="stylesheet" href="css/top-modal.css" />
-  <link rel="stylesheet" href="css/img-modal.css" />
-  <link rel="stylesheet" href="css/bot-modal.css" />
-  <link rel="stylesheet" href="css/search-modal.css" />
-  <link rel="stylesheet" href="css/workspace.css" />
-  <script defer src="js/img.js"></script>
-  <script defer src="js/time.js"></script>
-  <script defer src="js/search.js"></script>
-  <script defer src="js/workspace.js"></script>
-  <script defer src="js/extension.js"></script>
+  <!-- Imports --> 
+  <link rel="stylesheet" href="./src/styles/import.css">
+  <script type="module" src="./src/scripts/links.js"></script>
+  <script type="module" src="./src/scripts/weather.js"></script>
+  <script type="module" src="./src/scripts/time.js"></script>
+  <script type="module" src="./src/scripts/popup.js"></script>
+  <script type="module" src="./src/scripts/extensions.js"></script>
+  <script type="module" src="./src/scripts/mode.js"></script>
+  <script type="module" src="./src/scripts/welcome.js"></script>
+  <script type="module" src="./src/scripts/search.js"></script>
 </head>
 
-<body> 
-<div id="miModal" class="modal">
-      <div class="modal-content" >
+<body>
+  <main> 
 
-    <div id="search">
-    <div class="text2">
-    <p>Search using g! d! b! y!</p>
-    <div class="url">
-    <i id="icon" class="fa-brands fa-sistrix"></i>
-    <input type="text" id="searchInput" placeholder="Search..." onkeydown="if (event.key === 'Enter') search()">
-</div>
-</div>
-</div>
+ <button id="pin-action" >
+      <img id="character" src="" alt="Image Profile" />
+      <!--Don't delete this; it's a bug that I couldn't fix, but it works as is-->
+      <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" class="visually-hidden">
+      </svg>
+      <span class="visually-hidden"></span>
+    </button>
 
-<span class="profile-img-section">
-      <img id="profile-img" class="profile-img" src="img/bg-1.gif" alt="icon"/>
-</span>
 
-<div id="modal" class="img-modal">
-    <div class="img-content">
-	    <div class="text">
-	<p>Use a URL to Predefine the Image (All Formats are Valid)</p>
-	<div class="url">
-        <i id="icon" class="fa-brands fa-sistrix"></i>
-    <input type="text" id="img-url" placeholder="URL..." onkeydown="if (event.key === 'Enter') updateImage()">
+
+    <h1 id="welcome"></h1>
+
+      <!-- Welcome Section -->
+      <div class="header-container">
+        <div class="status-strip">
+            <span class="date"></span>
+            <span> | </span>
+            <span class="time"></span>
+            <span> | </span>
+            <span class="weather"></span>
         </div>
-	    </div>
-    </div>
-</div>
-
-<div>	
-    <h1 class="home">
-	    家<br>
-	    H<br>
-	    O<br>
-	    M<br>
-	    E<br></h1>
-
-<div id="contenedores">
     </div>
 
-<div id="formContainer" style="display: none;">
-    <form id="linkForm">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="enlace">Enlace:</label><br>
-        <input type="text" id="enlace" name="enlace"><br>
-        <input type="submit" value="Guardar">
-    </form>
-</div>
+    <button id="extension">
+      <span class="visually-hidden">Add-ons</span> 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l1 10H4z"/><path d="M9 8V4a3 3 0 0 1 6 0v4"/><path d="M10 12h4"/></svg>     
+      </button>   
+   
+      <form id="search-form" action="https://search.brave.com/search" method="GET">
+        <input autofocus type="search" id="search-input" name="q" aria-label="Search for something on Brave" placeholder="Search..." />
+        <button type="submit">
+          <span class="visually-hidden">Submit</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+        </button>
+      </form> 
+   
+    <nav id="bookmarks">
+      <!-- links injected via JS -->
+    </nav>
 
-     </div>
-   </div>
-</div>
-
-
-    <div class="plano"></div>
-    <div id="miModal" class="modal2">
-    <div class="modal-content" >
-    <a href="https://chatgpt.com/">
-    <button class="rabbit">
-    <img class="icon" src="img/icon.png" alt="icono">
-</button>
-    </a> 
-
-    <button onclick="cambiarWorkspace('workspace1')" class="space">一</button>
-    <button onclick="cambiarWorkspace('workspace2')" class="space">二</button>
-    <button onclick="cambiarWorkspace('workspace3')" class="space">三</button>
-    <button onclick="cambiarWorkspace('workspace4')" class="space">四</button>
-
-      <div id="time-container">
-     <p class="icon"><i class="fa-solid fa-stopwatch"></i></p>
-    <p id="time-display"></p>
+    <div id="search-modal" class="ani-modal">
+      <img id="url" src="./public/images/url.png"/>
+      <h1>Profile</h1>   
+      <h2>Enter a URL to change the cover image.</h2>
+      <input id="image-url-input" autofocus type="search" aria-label="Image-Url-Imput" placeholder="URL..." />  
     </div>
-    <button onclick="redirectToExtensionPage()" class="extension"><i class="fa-solid fa-box"></i></button>
-    </div>     
+ 
+    <div id="name-modal" class="ani-modal">
+      <img id="signature" src="./public/images/signature.png"/>
+      <h1>Signature</h1>   
+      <h2>Please eign your name here.</h2> 
+      <div id="name-input-container">
+        <input type="text" maxlength="1" autofocus />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+      </div> 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+        <text x="-10" y="50" font-size="45" font-family="Arial, sans-serif" text-anchor="left"> ━━━━━━ </text> 
+        <text x="200" y="50" font-size="45" font-family="Arial, sans-serif" text-anchor="middle">「契」</text>
+        <text x="250" y="50" font-size="45" font-family="Arial, sans-serif" text-anchor="right"> ━━━━━━ </text>
+      </svg>   
     </div>
+ 
+  </main>   
 </body>
+ 
+  <input id="dark-mode" class="toggle" type="checkbox" name="Dark mode" role="switch" value="on" data-theme="light">
+  <span class="visually-hidden">Mode-dark</span>
+  <div class="curtain"></div>
 
 </html>

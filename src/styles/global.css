@@ -1,0 +1,58 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: currentColor;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: max-content;
+  min-height: 100%;
+}
+
+.color-transition {
+  animation: colorWipe 0.5s ease-in-out;
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  opacity: 0;
+  transition: width 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/**
+ * Scrollbar
+ **/
+
+:root {
+  --scrollbar-track: var(--background);
+  --scrollbar-thumb: var(--text);
+}
+
+/* web standard */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
