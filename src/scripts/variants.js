@@ -121,7 +121,7 @@ export function updateVariant(variant) {
   });
 
   const current = variants[variantId];
-  const imageUrl = getPinned() || `src/public/images/night.jpg`;
+  const imageUrl = getPinned() || `https://i.pinimg.com/736x/83/fe/5d/83fe5d882eddf12a08baff79b3dfa423.jpg`;
 
   updateImage(imageUrl);
 
